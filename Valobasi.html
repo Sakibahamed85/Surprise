@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be Mine? 💖</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #FFC0CB; /* Light Pink */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            overflow: hidden;
+        }
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        h1 {
+            color: #FF1493; /* Deep Pink */
+            font-size: 24px;
+        }
+        .btn {
+            font-size: 20px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 20px;
+            margin: 10px;
+        }
+        .yes {
+            background-color: #FF69B4; /* Hot Pink */
+            color: white;
+        }
+        .no {
+            background-color: #8B0000; /* Dark Red */
+            color: white;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Can I ask you something? 💖</h1>
+        <button class="btn yes" onclick="showLove()">Yes 💍</button>
+        <button class="btn no" id="noBtn" onmouseover="moveButton()">No 😢</button>
+    </div>
+
+    <script>
+        function showLove() {
+            alert("💖 Yay! I love you too, রিজুনা! 💖💍");
+        }
+
+        function moveButton() {
+            let button = document.getElementById("noBtn");
+            let x = Math.random() * (window.innerWidth - 100);
+            let y = Math.random() * (window.innerHeight - 50);
+            button.style.left = x + "px";
+            button.style.top = y + "px";
+        }
+    </script>
+
+</body>
+</html>
